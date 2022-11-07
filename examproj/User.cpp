@@ -39,6 +39,8 @@ void User::PrintResults()
 	system("pause");
 }
 
+//–°–∏—Å—Ç–µ–º–∞ –ø—Ä–æ—Ö–æ–∂–¥–µ–Ω–∏—è —Ç–µ—Å—Ç–∞ —Å—Ç—Ä–æ–∏—Ç—Å—è –Ω–∞ –≤—ã—Ç—è–≥–∏–≤–∞–Ω–∏–∏ –≤—Å–µ—Ö –µ–≥–æ —ç–ª–µ–º–µ–Ω—Ç–æ–≤ –∏–∑ —Ñ–∞–π–ª–∞, —á—Ç–æ–±—ã –ø—Ä–∏ –∑–∞–∫—Ä—ã—Ç–∏–∏ –∫–æ–Ω—Å–æ–ª–∏ –¥–∞–Ω–Ω—ã–µ —Å–æ—Ö—Ä–∞–Ω—è–ª–∏—Å—å
+
 void User::PassTest(list<User*>& Users, vector <string>& Categories, vector<Test>& Tests)
 {
 	system("cls");
@@ -55,7 +57,7 @@ void User::PassTest(list<User*>& Users, vector <string>& Categories, vector<Test
 		cout << endl;
 	}
 	File.close();
-	cout << endl << "œÂ‚ÓÂ ÒÎÓ‚Ó - Í‡ÚÂ„ÓËˇ. ¬ÚÓÓÂ - ÚÂÏ‡ ÚÂÒÚ‡. ¬˚·ÂËÚÂ ÚÂÒÚ (Ì‡ÔË¯ËÚÂ ÚÂÏÛ ÚÂÒÚ‡): ";
+	cout << endl << "√è√•√∞√¢√Æ√• √±√´√Æ√¢√Æ - √™√†√≤√•√£√Æ√∞√®√ø. √Ç√≤√Æ√∞√Æ√• - √≤√•√¨√† √≤√•√±√≤√†. √Ç√ª√°√•√∞√®√≤√• √≤√•√±√≤ (√≠√†√Ø√®√∏√®√≤√• √≤√•√¨√≥ √≤√•√±√≤√†): ";
 	cin >> TestTitle;
 
 	string TestPath = "D:\\examproject\\testingsystem\\tests\\";
@@ -71,7 +73,7 @@ void User::PassTest(list<User*>& Users, vector <string>& Categories, vector<Test
 	}
 	File.close();
 	for (int i = 0; i < 6; i++) {
-		cout << "¬‚Â‰ËÚÂ ÓÚ‚ÂÚ Ì‡ ‚ÓÔÓÒ " << i + 1;
+		cout << "√Ç√¢√•√§√®√≤√• √Æ√≤√¢√•√≤ √≠√† √¢√Æ√Ø√∞√Æ√± " << i + 1;
 		cin >> Answers[i];
 	}
 	string TestAnswersPath = "D:\\examproject\\testingsystem\\tests\\";
@@ -88,8 +90,8 @@ void User::PassTest(list<User*>& Users, vector <string>& Categories, vector<Test
 		}
 		i++;
 	}
-	cout << endl << "œ‡‚ËÎ¸Ì˚ı ÓÚ‚ÂÚÓ‚: " << RightAnswersCount << endl;
-	cout << endl << "ŒˆÂÌÍ‡: " << RightAnswersCount * 2 << " ¬ ÔÓˆÂÌÚ‡ı: " << 100 / 6 * 6 << endl;
+	cout << endl << "√è√∞√†√¢√®√´√º√≠√ª√µ √Æ√≤√¢√•√≤√Æ√¢: " << RightAnswersCount << endl;
+	cout << endl << "√é√∂√•√≠√™√†: " << RightAnswersCount * 2 << " √Ç √Ø√∞√Æ√∂√•√≠√≤√†√µ: " << 100 / 6 * 6 << endl;
 	SaveResult(TestTitle, RightAnswersCount * 2);
 	system("pause");
 	UserMenu(Users, this, Categories, Tests);
